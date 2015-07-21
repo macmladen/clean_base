@@ -1,0 +1,70 @@
+## Drupal standard git ignoring
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+## Apache git ignoring
+# Ignore .htaccess
+# changed for server security, Options +SymLinksifOwnerMatch
+#.htaccess
+#.htpasswd
+#htusers
+
+# Ignore backups and archives
+*~
+*bak
+*.sql
+*.tar
+*.gz
+*.tgz
+
+# Ignore Compass temp & devel files
+.sass-cache
+*.css.map
+
+# Ignore CSS files - generate them
+sites/all/themes/*/css/
+
+# IDE files
+.buildpath
+.project
+.settings
+.metadata
+.cache
+.idea
+*.sublime-*
+*.esproj
+.directory
+
+# Ignore CTags
+.tags*
+
+# Mac OS X specific files
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+Thumbs.db
+
+# Server files
+awstats-icon
+awstatsicons
+icon
+
+# Dev
+FirePHPCore
+
+# Modules and themes used for testing or dev.
+sites/all/modules/contrib/styleguide/
+sites/all/modules/contrib/seo_checklist/
+sites/all/modules/contrib/checklistapi/
+sites/all/modules/contrib/examples/
